@@ -1,0 +1,30 @@
+/* SideDrawer.css */
+
+/* Make the modal act as a left-side drawer */
+.side-drawer-modal .modal-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 300px; /* Set width for the drawer */
+  margin: 0;
+  transition: transform 0.3s ease-out;
+  transform: translateX(-100%); /* Initially off-screen to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.side-drawer-modal.show .modal-dialog {
+  transform: translateX(0); /* Slide in when the modal is shown */
+}
+
+.side-drawer-modal .modal-content {
+  height: 100%;
+  border-radius: 0; /* Remove border-radius to look like a drawer */
+}
+
+.side-drawer-modal .modal-header,
+.side-drawer-modal .modal-body {
+  overflow-y: auto; /* Ensure the content is scrollable */
+}
