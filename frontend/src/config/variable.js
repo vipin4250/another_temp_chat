@@ -1,3 +1,3 @@
 // src/config.js
-export const ENDPOINT = "http://localhost:3000"; // Your backend endpoint
+export const ENDPOINT = "https://another-temp-chat-api.vercel.app"; // Your backend endpoint
     
